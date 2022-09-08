@@ -6,6 +6,7 @@ function ListTracks() {
   const [btnDelete, setBtnDelete] = useState(false);
   const [btnColor, setBtnColor] = useState(false);
 
+
   const handleColor = (e) => {
     setBtnColor(!btnColor);
     if (btnColor) {
@@ -21,14 +22,22 @@ function ListTracks() {
     setBtnDelete(!btnDelete);
     if (btnDelete) {
       e.target.parentNode.parentNode.remove();
+      changeOrder();
     }
+  };
+
+  const changeOrder = (e) => {
+    const list = document.querySelectorAll(".list-musics");
+    list.forEach((item, index) => {
+      item.childNodes[0].innerHTML = index +1;
+    });
   };
 
   const listenerTracks = () => {
     return data.musics.map((track) => {
       return (
         <div className="list-musics">
-          <p className="order">{Number(track.id) + 1}</p>
+          <p className="order">{1 + Number(track.id)}</p>
           <img src={track.image} alt="" className="img-track" />
           <div className="track-ids">
             <p className="track-name">{track.name}</p>

@@ -19,6 +19,7 @@
         'opsz'200;
     transform: scale(1.5);
     color: #2b2b2b;   
+    cursor: pointer;
 }
 
 
@@ -28,11 +29,13 @@
     color: #CCCCCC;
     transform: scale(1.7);
     margin-left: 25px;
+    cursor: pointer;
     font-variation-settings:
         'FILL'0,
-        'wght'300,
+        'wght'400,
         'GRAD'50,
         'opsz'200;
+    
 }
 
 .actions-container #favorite {
