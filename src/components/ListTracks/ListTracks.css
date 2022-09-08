@@ -1,0 +1,112 @@
+.container-list-music {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.container-list-music .list-musics {
+    height: 60px;
+    width: 75%;
+    border-radius: 5px;
+    position: relative;
+    left: 320px;
+    top: 340px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-list-music .list-musics:hover {
+    background-color: rgba(69, 67, 65, 0.522);
+}
+
+.container-list-music .list-musics .order {
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.container-list-music .list-musics .img-track {
+    width: 40px;
+    margin-right: 16px;
+}
+
+.container-list-music .list-musics .track-ids {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 18%;
+}
+
+.container-list-music .list-musics .track-ids .track-name {
+    width: 100%;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.container-list-music .list-musics .track-artist {
+    font-size: 12px;
+    margin-top: -10px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.container-list-music .list-musics .track-artist:hover {
+    text-decoration: underline;
+
+}
+
+.container-list-music .list-musics .track-album {
+    width: 18%;
+    margin-right: 8%;
+}
+
+.container-list-music .list-musics button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #CCCCCC;
+    margin: 0;
+    padding: 0;
+}
+
+.container-list-music .list-musics .btn-favorite {
+    margin-right: 2%;
+}
+
+.container-list-music .list-musics .btn-delete {
+    margin-right: 4%;
+}
+
+@media screen and (max-width: 1300px) {
+    .container-list-music .list-musics .track-duration {
+        display: none;
+    }
+
+    .container-list-music .list-musics .track-ids {
+        margin-right: 18%;
+    }
+
+    .container-list-music .list-musics {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .container-list-music .list-musics .track-ids {
+        margin-right: 18%;
+    }
+
+    .container-list-music .list-musics {
+        width: 60%;
+    }
+
+    .container-list-music .list-musics .track-album {
+        font-size: 12px;
+    }
+}
