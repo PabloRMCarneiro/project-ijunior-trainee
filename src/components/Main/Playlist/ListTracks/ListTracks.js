@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./ListTracks.css";
-import data from "../../data/musics.json";
-import BtnFavorite from "../BtnFavorite/BtnFavorite";
+import data from "../../../../data/musics.json";
+import BtnFavorite from "../../../BtnFavorite/BtnFavorite";
 
 function ListTracks() {
   const [btnDelete, setBtnDelete] = useState(false);

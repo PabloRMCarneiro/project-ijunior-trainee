@@ -1,5 +1,5 @@
 import { React} from "react";
-import BtnFavorite from "../BtnFavorite/BtnFavorite";
+import BtnFavorite from "../../../BtnFavorite/BtnFavorite";
 import "./ActionNav.css";
 
 function ActionNav() {
