@@ -1,23 +1,11 @@
 import { React, useState } from "react";
 import "./ListTracks.css";
 import data from "../../data/musics.json";
+import BtnFavorite from "../BtnFavorite/BtnFavorite";
 
 function ListTracks() {
   const [btnDelete, setBtnDelete] = useState(false);
-  const [btnColor, setBtnColor] = useState(false);
-
-
-  const handleColor = (e) => {
-    setBtnColor(!btnColor);
-    if (btnColor) {
-      e.target.style.fontVariationSettings = "'FILL' 1";
-      e.target.style.color = "#3FE168";
-    }
-    if (!btnColor) {
-      e.target.style.fontVariationSettings = "'FILL' 0";
-      e.target.style.color = "#CCCCCC";
-    }
-  };
+  
   const handleDelete = (e) => {
     setBtnDelete(!btnDelete);
     if (btnDelete) {
@@ -44,11 +32,7 @@ function ListTracks() {
             <p className="track-artist">{track.artist}</p>
           </div>
           <p className="track-album">{track.album}</p>
-          <button className="btn-favorite" onClick={handleColor}>
-            <span className="material-symbols-outlined" id="favorite">
-              favorite
-            </span>
-          </button>
+          <BtnFavorite />
           <button className="btn-delete" onClick={handleDelete}>
             <span class="material-symbols-outlined" id="delete">
               delete
