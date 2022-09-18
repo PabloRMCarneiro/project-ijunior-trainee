@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 
 function BtnFavorite() {
+  
   const [btnColor, setBtnColor] = useState(false);
   const handleColor = (e) => {
     setBtnColor(!btnColor);

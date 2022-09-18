@@ -12,7 +12,7 @@ function Playlist() {
         <InfosPlaylist className="infos-container" />
         <ActionNav className="actions-container" />
         <TopBar className="top-bar-container" />
-        <ListTracks className="list-tracks-container" />
+        <ListTracks className="list-tracks-container" /> 
       </div>
     </>
   );

@@ -1,13 +1,18 @@
-import React from "react";
+import { React } from "react";
 import "./Main.css";
-import Nav from './Nav/Nav';
-import Playlist from "./Playlist/Playlist";
+import Nav from "./Nav/Nav";
+/* import Playlist from "./Playlist/Playlist"; */
+
+import PageArtists from "./PageArtists/PageArtists";
 
 function Main() {
+  
+
   return (
     <div className="main">
       <Nav />
-      <Playlist />
+      <PageArtists />
+      {/* <Playlist /> */}
     </div>
   );
 }

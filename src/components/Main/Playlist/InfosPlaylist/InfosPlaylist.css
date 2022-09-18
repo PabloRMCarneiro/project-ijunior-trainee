@@ -19,6 +19,7 @@
     flex-direction: column;
     margin-left: 20px;
     margin-top: 55px;
+    justify-content: space-between;
 }
 
 .infos-container .container-description .type {
