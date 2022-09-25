@@ -16,9 +16,9 @@ function CreateUserPage() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
+/*   useEffect(() => {
     localStorage.getItem('stateLog') === 'true' ? navigate('/artistas') : navigate('/');
-  }, [navigate]);
+  }, [navigate]); */
 
 
   function handleSubmit(e) {
