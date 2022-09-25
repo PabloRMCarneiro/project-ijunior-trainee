@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfosPlaylist.css";
-import thumbnail from "../../../../img/thumbnail-playlist.png";
+import thumbnail from "../../../img/thumbnail.jpeg";
 function InfosPlaylist() {
   return (
     <>

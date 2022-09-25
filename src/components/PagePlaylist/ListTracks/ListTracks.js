@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./ListTracks.css";
-import data from "../../../../data/musics.json";
-import BtnFavorite from "../../../BtnFavorite/BtnFavorite";
+import data from "../../../data/musics.json";
+import BtnFavorite from "../../BtnFavorite/BtnFavorite";
 
 function ListTracks() {
   const [btnDelete, setBtnDelete] = useState(false);
@@ -24,7 +24,7 @@ function ListTracks() {
   const listenerTracks = () => {
     return data.musics.map((track) => {
       return (
-        <div className="list-musics">
+        <div className="list-musics" key={track.id}>
           <p className="order">{1 + Number(track.id)}</p>
           <img src={track.image} alt="" className="img-track" />
           <div className="track-ids">
@@ -34,7 +34,7 @@ function ListTracks() {
           <p className="track-album">{track.album}</p>
           <BtnFavorite />
           <button className="btn-delete" onClick={handleDelete}>
-            <span class="material-symbols-outlined" id="delete">
+            <span className="material-symbols-outlined" id="delete">
               delete
             </span>
           </button>

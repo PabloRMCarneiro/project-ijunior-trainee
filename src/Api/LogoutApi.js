@@ -3,8 +3,7 @@ import api from './Api'
 
 function LoginApi (){
 
-    api.post('/users/logout')
-    .then();
+    return api.post('/users/logout');
 }
 
 export default LoginApi;

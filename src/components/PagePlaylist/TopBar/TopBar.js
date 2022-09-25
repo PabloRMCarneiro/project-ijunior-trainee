@@ -11,7 +11,7 @@ function TopBar() {
             <p className="title">Título</p>
           </div>
           <p className="album">Álbum</p>
-          <span class="material-symbols-outlined">schedule</span>
+          <span className="material-symbols-outlined">schedule</span>
         </div>
         <div className="bottom"></div>
       </div>

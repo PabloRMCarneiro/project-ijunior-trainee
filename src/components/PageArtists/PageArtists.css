@@ -1,13 +1,14 @@
 .main-container-artists {
     width: 100%;
-    min-height: 1087px;
+    min-height: 100vh;
     max-height: 100%;
     background-color: #111111;
     mix-blend-mode: normal;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin-left: 232px;
+    padding-left: 263px;
+    
 }
 
 .main-container-artists p {

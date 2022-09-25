@@ -1,22 +1,5 @@
-import "./App.css";
-import { useEffect } from 'react';
-import LoginApi from './Api/LoginApi';
-import Main from "./components/Main/Main";
+import Routes from './utils/routes';
 
-function App() {
-
-  useEffect(() => {
-  /*se não estiver logado chamar LoginApi()*/
-    
-  LoginApi();
-
-  }, []);
-  return (
-    <>
-      <Main className="main-container" />
-    </>
-
-  );
-}
+const App = () => <Routes />
 
 export default App;

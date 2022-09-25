@@ -4,13 +4,14 @@
 
     background: linear-gradient(180deg, #857257 0%, #000000 80.84%);
     width: 100%;
-    min-height: 1087px;
+    min-height: 100vh;
+    height: 1200px;
     max-height: 100%;
     mix-blend-mode: normal;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .main-container .infos-container {

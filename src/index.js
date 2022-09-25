@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/* import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Route,
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+} from "react-router-dom";
+
+import LoginPage from "./components/LoginPage/LoginPage";
+import CreateUserPage from "./components/CreateUserPage/CreateUserPage";
+import PageArtists from "./components/PageArtists/PageArtists";
+import Playlist from "./components/PagePlaylist/PagePlaylist"
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      localStorage.getItem('stateLog') ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to={{ pathname: '/', state: { from: props.location } }} />
+      )
+    }
+  />
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render(
+  <BrowserRouter>
+    <Switch>
+
+      <Route path="/" exact component={<LoginPage />} >
+      </Route>
+      <Route path="/cadastro" component={<CreateUserPage />}>
+      </Route>
+      <PrivateRoute path="/artistas" component={<PageArtists />}>
+      </PrivateRoute>
+      
+
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById("root")
+);  */
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+)
