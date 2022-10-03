@@ -1,44 +1,54 @@
-import { React, useState } from "react";
+import { React } from "react";
 import "./ListTracks.css";
-import data from "../../../data/musics.json";
-import BtnFavorite from "../../BtnFavorite/BtnFavorite";
+import api from '../../../Api/Api';
+import { useEffect, useState} from 'react';
 
-function ListTracks() {
-  const [btnDelete, setBtnDelete] = useState(false);
-  
+function ListTracks(props) {
+
+  const { musics } = props;
+  const [artist, setArtist] = useState([]);
+
   const handleDelete = (e) => {
-    setBtnDelete(!btnDelete);
-    if (btnDelete) {
-      e.target.parentNode.parentNode.remove();
-      changeOrder();
-    }
+    e.target.parentNode.parentNode.remove();
+    changeOrder();
   };
 
   const changeOrder = (e) => {
     const list = document.querySelectorAll(".list-musics");
     list.forEach((item, index) => {
-      item.childNodes[0].innerHTML = index +1;
+      item.childNodes[0].innerHTML = index + 1;
     });
   };
 
+
+  useEffect(() => {
+    api.get("/artists")
+      .then((response) => {
+        setArtist(response.data);
+      })
+  }, []);
+
   const listenerTracks = () => {
-    return data.musics.map((track) => {
+    return musics.map((track, index) => {
       return (
         <div className="list-musics" key={track.id}>
-          <p className="order">{1 + Number(track.id)}</p>
-          <img src={track.image} alt="" className="img-track" />
+          <p className="order">{1 + index}</p>
+          <img src={track.cover_image} alt="" className="img-track" />
           <div className="track-ids">
-            <p className="track-name">{track.name}</p>
-            <p className="track-artist">{track.artist}</p>
+            <p className="track-name">{track.title}</p>
+            <p className="track-artist">{artist.map((art) => {
+              if (art.id === track.artist_id) {
+                return art.name;
+              }
+            })}</p>
           </div>
-          <p className="track-album">{track.album}</p>
-          <BtnFavorite />
+          <p className="track-album">{track.genre}</p>
+          <div className="btn-favorite"></div>
           <button className="btn-delete" onClick={handleDelete}>
             <span className="material-symbols-outlined" id="delete">
               delete
             </span>
           </button>
-          <p className="track-duration">{track.duration}</p>
         </div>
       );
     });

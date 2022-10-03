@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
+
+/* .actions-container{
+    border: 1px solid white;
+} */
 .actions-container .circle {
     width: 65px;
     height: 65px;
@@ -7,8 +11,16 @@
     background-color: #3FE168;
     display: flex;
     align-items: center;
-    justify-content: center;
+
 }
+.actions-container .circle span {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: 12.5px;
+    margin-top: -1px;
+}
+
 
 button {
     background-color: transparent;
@@ -25,18 +37,15 @@ button {
         'wght'700,
         'GRAD'50,
         'opsz'200;
-    transform: scale(1.5);
     color: #2b2b2b;
     cursor: pointer;
 }
 
 
-.actions-container #download,
-.actions-container #favorite,
-.actions-container #more-horiz {
+.actions-container #download{
     color: #CCCCCC;
-    transform: scale(1.7);
-    margin-left: 25px;
+    margin-left: 100px;
+    font-size: 40px;
     cursor: pointer;
     font-variation-settings:
         'FILL'0,
@@ -48,4 +57,7 @@ button {
 
 .actions-container #favorite {
     margin-left: 28px;
+    font-size: 40px;
+    margin-top:-18px;
+    margin-left: 90px;
 }

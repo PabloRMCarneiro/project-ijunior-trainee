@@ -55,17 +55,15 @@ a {
     height: 70%;
 }
 
-.nav-menu .nav-links a {
+.nav-menu .nav-links .links  {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
-}
+}   
 
-.nav-menu .nav-links a span ,
-.nav-menu .logout a span {
-    margin-right: 9px;
-
+.nav-menu .nav-links .links span ,
+.nav-menu .logout  .links span {
+    margin-top: 20px;
     font-variation-settings:
         'FILL'1,
         'wght'400,
@@ -79,9 +77,8 @@ a {
     justify-content: center;
 
 }
-.nav-menu .logout a{
+.nav-menu .logout .links{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 

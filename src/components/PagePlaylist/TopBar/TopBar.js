@@ -10,7 +10,7 @@ function TopBar() {
             <p className="hashtag">#</p>
             <p className="title">Título</p>
           </div>
-          <p className="album">Álbum</p>
+          <p className="album">Gênero</p>
           <span className="material-symbols-outlined">schedule</span>
         </div>
         <div className="bottom"></div>

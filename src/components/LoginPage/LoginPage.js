@@ -70,7 +70,7 @@ function LoginPage() {
                 lock  
               </span>
             </div>
-            <button type=" ">Entrar</button>
+            <button type="submit">Entrar</button>
           </form>
           <p className="page-create-acount">NÃO TEM UMA CONTA?
             <Link to="/cadastro" className="a"> INSCREVA-SE</Link>

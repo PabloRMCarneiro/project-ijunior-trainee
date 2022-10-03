@@ -2,24 +2,32 @@ import { React, useEffect, useState } from "react";
 import "./PageArtists.css";
 import Api from "../../Api/Api";
 import Nav from "../Nav/Nav";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import SimpleBackdrop from '../../utils/Backdrop';
+/* 
+import UpdateSong from '../../Api/UpdateSong';
+import CreateSongComp from '../CreateSongComp/CreateSongComp';
+import DeleteSong from '../../Api/DeleteSong';
+import GetAllSongsByUser from '../../Api/GetAllSongsByUser';
+import api from '../../Api/Api';
+import DeleteUser from '../../Api/DeleteUser';
+*/
 
 function PageArtists() {
 
   const [backdrop, setBackdrop] = useState(false);
   const [artist, setArtist] = useState([]);
+  const [musicsArtist, setMusicsArtist] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    
-
 
     localStorage.getItem('stateLog') === 'false' ? navigate('/') : navigate('/artistas');
     setBackdrop(true);
 
     Api.get("/artists")
-    .then((response) => {
+      .then((response) => {
         setBackdrop(false);
         setArtist(response.data);
       })
@@ -28,35 +36,35 @@ function PageArtists() {
         setBackdrop(false);
       });
 
-
   }, [navigate]);
 
+  const handleArtistPlaylist = (id) => {
+    setMusicsArtist(!musicsArtist);
+    musicsArtist ? navigate(`/musicas/artistas/${id}`) : navigate('/artistas');
+  }
 
-
-  const handleArtists = () => {
-    return artist.map((artist) => {
-      return (
-        <div className="card-artists" key={artist.id}>
-          <img src={artist.image} alt="" className="image-artists" />
-          <div className="infos-artists">
-            <p className="name-artists">{artist.name}</p>
-            <p className="class-artists">Artista</p>
-          </div>
-        </div>
-      );
-    });
-  };
 
   return (
     <>
       <Nav />
       <div className="main-container-artists">
-        {backdrop && <SimpleBackdrop/>}
+        {backdrop && <SimpleBackdrop />}
         <p className="main-title">Artistas</p>
-
         <div className="container-artists">
-          {handleArtists()}
+          {artist.map((art) => {
+            return (
+              <div className="card-artists" key={art.id} onClick={e => handleArtistPlaylist(art.id)}  >
+                <img src={art.image} alt="" className="image-artists" />
+
+                <div className="infos-artists">
+                  <p className="name-artists">{art.name}</p>
+                  <p className="class-artists">Artista</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </>
   );

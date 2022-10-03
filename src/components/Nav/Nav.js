@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import "./Nav.css";
 import { Link } from 'react-router-dom'
 import LogoutApi from '../../Api/LogoutApi'
@@ -26,22 +26,26 @@ function Nav() {
 
   return (
     <div className="nav-menu">
-      {backdrop && <SimpleBackdrop/>}
+      {backdrop && <SimpleBackdrop />}
       <p className="title">iSpotify ®</p>
       <div className="nav-links">
-        <Link to="/artistas">
+        <Link to="/artistas" className="links">
           <span className="material-symbols-outlined">album</span>
-          Artistas
+          <p className="link-name">Artistas</p>
         </Link>
-        <Link to="/musicas-curtidas">
+        <Link to="/musicas-curtidas" className="links">
           <span className="material-symbols-outlined">favorite</span>
-          Músicas Curtidas
+          <p className="link-name">Músicas Curtidas</p>
+        </Link>
+        <Link to="/minha-conta" className="links">
+          <span className="material-symbols-outlined">account_circle</span>
+          <p className="link-name">Minha Conta</p>            
         </Link>
       </div>
       <footer className="logout">
-        <Link to="/" onClick={handleLogout}>
+        <Link to="/" onClick={handleLogout} className="links">
           <span className="material-symbols-outlined">logout</span>
-          Logout
+          <p className="link-name">Logout</p>          
         </Link>
       </footer>
     </div>

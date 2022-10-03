@@ -18,7 +18,7 @@
 }
 
 .container-list-music .list-musics:hover {
-    background-color: rgba(69, 67, 65, 0.522);
+    background-color: #7777777e;
 }
 
 .container-list-music .list-musics .order {
@@ -38,7 +38,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-right: 18%;
+    margin-right: 17%;
 }
 
 .container-list-music .list-musics .track-ids .track-name {
@@ -62,7 +62,7 @@
 
 .container-list-music .list-musics .track-album {
     width: 18%;
-    margin-right: 8%;
+    margin-right: 15%;
 }
 
 .container-list-music .list-musics button {
@@ -75,11 +75,14 @@
 }
 
 .container-list-music .list-musics .btn-favorite {
-    margin-right: 2%;
+    margin-right: 7%;
+    margin-top: -40px;
 }
 
 .container-list-music .list-musics .btn-delete {
     margin-right: 4%;
+    margin-top: -40px;
+    margin-left: -2%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -88,7 +91,7 @@
     }
 
     .container-list-music .list-musics .track-ids {
-        margin-right: 18%;
+        margin-right: 23%;
     }
 
     .container-list-music .list-musics {

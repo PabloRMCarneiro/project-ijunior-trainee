@@ -1,49 +1,49 @@
 {
     "musics": [{
             "id": "0",
-            "name": "Easy Boom",
+            "title": "Easy Boom",
             "artist": "Drumagick",
-            "album": "Sambaloco Drum'n'Bass",
+            "genre": "Sambaloco Drum'n'Bass",
             "duration": "5:42",
             "image": "https://i.scdn.co/image/ab67616d0000485186692ad0db3cb94b889fb4ff"
         },
         {
             "id": "1",
-            "name": "Summer Rain",
+            "title": "Summer Rain",
             "artist": "David WS",
-            "album": "Sambass",
+            "genre": "Sambass",
             "duration": "7:05",
             "image": "https://i.scdn.co/image/ab67616d0000485119918c1edad52364008f320e"
         },
         {
             "id": "2",
-            "name": "Não Meixe Só - DeepLick & Ramilson Maia DB Remix Edit",
+            "title": "Não Meixe Só - DeepLick & Ramilson Maia DB Remix Edit",
             "artist": "Vanessa Da Mata, Fernando Santos Leite, Ramilson da Silva Maria, DeepLick",
-            "album": "Vanessa da Mata",
+            "genre": "Vanessa da Mata",
             "duration": "4:07",
             "image": "https://i.scdn.co/image/ab67616d00004851c7c38f7457631f3bab82430c"
         },
         {
             "id": "3",
-            "name": "Made In Bahia",
+            "title": "Made In Bahia",
             "artist": "DJ Patife",
-            "album": "Na Estrada",
+            "genre": "Na Estrada",
             "duration": "6:55",
             "image": "https://i.scdn.co/image/ab67616d0000485180c7931b21ac28a044a1abbd"
         },
         {
             "id": "4",
-            "name": "LK feat. Stamina MC (Carol Carolina Bela)",
+            "title": "LK feat. Stamina MC (Carol Carolina Bela)",
             "artist": "DJ Marky, Stamina MC",
-            "album": "In Rotation",
+            "genre": "In Rotation",
             "duration": "5:29",
             "image":" https://i.scdn.co/image/ab67616d00004851f9b1b466f3f6f5c25e852dd5"
         },
         {
             "id": "5",
-            "name": "Cotidiano",
+            "title": "Cotidiano",
             "artist": "Marcelinho Da Lua, Seu Jorge",
-            "album": "Viagem Ao Mundo da Lua",
+            "genre": "Viagem Ao Mundo da Lua",
             "duration": "5:24",
             "image": "https://i.scdn.co/image/ab67616d00004851eb838a3e4d4b0d712268be44"
         }

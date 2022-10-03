@@ -16,23 +16,23 @@
 
 .infos-container .container-description {
     display: flex;
-    flex-direction: column;
     margin-left: 20px;
     margin-top: 55px;
-    justify-content: space-between;
+    flex-direction: column-reverse;
 }
 
 .infos-container .container-description .type {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 21px;
+    margin-bottom: 27px;
 }
 
 .infos-container .container-description .playlist-name {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 50px;
+    text-align: 1px;
     line-height: 58px;
-    margin-top: -10px;
 }
 
 .infos-container .container-description .playlist-bands {
