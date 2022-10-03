@@ -4,14 +4,6 @@ import Api from "../../Api/Api";
 import Nav from "../Nav/Nav";
 import { useNavigate } from "react-router-dom"
 import SimpleBackdrop from '../../utils/Backdrop';
-/* 
-import UpdateSong from '../../Api/UpdateSong';
-import CreateSongComp from '../CreateSongComp/CreateSongComp';
-import DeleteSong from '../../Api/DeleteSong';
-import GetAllSongsByUser from '../../Api/GetAllSongsByUser';
-import api from '../../Api/Api';
-import DeleteUser from '../../Api/DeleteUser';
-*/
 
 function PageArtists() {
 
@@ -43,7 +35,6 @@ function PageArtists() {
     musicsArtist ? navigate(`/musicas/artistas/${id}`) : navigate('/artistas');
   }
 
-
   return (
     <>
       <Nav />
@@ -64,7 +55,6 @@ function PageArtists() {
             );
           })}
         </div>
-
       </div>
     </>
   );
