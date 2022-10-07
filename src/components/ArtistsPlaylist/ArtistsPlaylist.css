@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
+.min-container{
+    min-width: 800px;
+    
+}
 .main-container-artist {
 
     background: linear-gradient(180deg, #555555 0%, #000000 80.84%);

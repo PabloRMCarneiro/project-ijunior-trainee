@@ -4,7 +4,6 @@ import Api from "../../Api/Api";
 import Nav from "../Nav/Nav";
 import { useNavigate } from "react-router-dom"
 import SimpleBackdrop from '../../utils/Backdrop';
-
 function PageArtists() {
 
   const [backdrop, setBackdrop] = useState(false);
@@ -14,8 +13,9 @@ function PageArtists() {
   const navigate = useNavigate();
 
   useEffect(() => {
-
+    
     localStorage.getItem('stateLog') === 'false' ? navigate('/') : navigate('/artistas');
+    
     setBackdrop(true);
 
     Api.get("/artists")
@@ -30,6 +30,7 @@ function PageArtists() {
 
   }, [navigate]);
 
+  
   const handleArtistPlaylist = (id) => {
     setMusicsArtist(!musicsArtist);
     musicsArtist ? navigate(`/musicas/artistas/${id}`) : navigate('/artistas');
@@ -46,7 +47,6 @@ function PageArtists() {
             return (
               <div className="card-artists" key={art.id} onClick={e => handleArtistPlaylist(art.id)}  >
                 <img src={art.image} alt="" className="image-artists" />
-
                 <div className="infos-artists">
                   <p className="name-artists">{art.name}</p>
                   <p className="class-artists">Artista</p>

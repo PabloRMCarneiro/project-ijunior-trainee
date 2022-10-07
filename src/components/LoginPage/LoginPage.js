@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import LoginApi from '../../Api/LoginApi'
 import SimpleBackdrop from '../../utils/Backdrop';
 import SimpleAlert from '../../utils/Alert'
-
 function LoginPage() {
 
   const [email, setEmail] = useState("");
@@ -12,7 +11,6 @@ function LoginPage() {
   const [backdrop, setBackdrop] = useState(false);
   const [simpleAlert, setSimpleAlert] = useState(false);
   const navigate = useNavigate();
-
 
 
   useEffect(() => {

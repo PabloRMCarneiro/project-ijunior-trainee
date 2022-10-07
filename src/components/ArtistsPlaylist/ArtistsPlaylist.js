@@ -39,6 +39,7 @@ function ArtistsPlaylist() {
   
   return (
     <>
+    <div className="min-container">
       <Nav />
       {backdrop && <Backdrop/>}
       <div className="main-container-artist">
@@ -47,6 +48,7 @@ function ArtistsPlaylist() {
       <TopBar className="top-bar-container" />
       <ListTrackArtist className="list-tracks-container" musics={musics} artist={artist.name} stateBtnFavorite={true}/>
       </div>
+    </div>
     </>
   )
 }

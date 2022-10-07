@@ -119,7 +119,7 @@ export default function TransitionsModal() {
             </Typography>
             {simpleAlert && <Alert message="Preencha todos os campos!" />}
             {alertDiferent && <Alert message="As senhas não são iguais!" />}
-            {alertEqual && <Alert message="A senha atual não pode ser igual a nova senha!" />}
+            {alertEqual && <Alert message="A nova senha não pode ser igual a senha atual!" />}
             {alert && <Alert message="Senha inválida!" />}
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               <form onSubmit={handleSubmit}>

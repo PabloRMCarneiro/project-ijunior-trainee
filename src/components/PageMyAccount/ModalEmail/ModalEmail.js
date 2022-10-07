@@ -26,9 +26,7 @@ const style = {
   fontFamily: 'Inter',
 };
 
-
 export default function TransitionsModal() {
-
 
   const [open, setOpen] = React.useState(true);
   const [email, setEmail] = React.useState('');
@@ -40,7 +38,6 @@ export default function TransitionsModal() {
 
   const handleClose = () => setOpen(false);
   const handleEmail = (e) => setEmail(e.target.value);
-
 
   useEffect(() => {
     Api.get('/users/user')

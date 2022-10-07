@@ -1,10 +1,10 @@
 import api from './Api'
 
-function DeleteUsers (id){
+function DeleteUser (id){
     
     api.delete(`/users/${id}`, {
     })
     .then();
 }
 
-export default DeleteUsers;
+export default DeleteUser;
