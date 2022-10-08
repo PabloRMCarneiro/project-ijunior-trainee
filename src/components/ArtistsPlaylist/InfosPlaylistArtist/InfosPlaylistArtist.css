@@ -1,0 +1,108 @@
+.infos-container-art {
+  width: 70%;
+  min-width: 300px;
+  max-height: 224px;
+  display: flex;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  margin-left: 322px;
+  margin-top: 160px;
+  margin-bottom: -150px;
+}
+
+.infos-container-art .thumbnail-playlist {
+  width: 224px;
+}
+
+.infos-container-art .container-description {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 55px;
+  flex-direction: column-reverse;
+}
+
+.infos-container-art .container-description .type {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 27px;
+}
+
+.infos-container-art .container-description .playlist-name {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: 1px;
+  line-height: 58px;
+}
+
+.infos-container-art .container-description .playlist-bands {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -30px;
+}
+
+.infos-container-art .container-description .auxiliar-display {
+  margin-top: -10px;
+  display: flex;
+  align-items: baseline;
+}
+
+.infos-container-art .container-description .auxiliar-display .playlist-infos,
+.infos-container-art .container-description .auxiliar-display .playlist-duration {
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.infos-container-art .container-description .auxiliar-display .playlist-duration {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+@media screen and (max-width: 1300px) {
+  .infos-container-art .container-description {
+      margin-top: 60px;
+  }
+
+  .infos-container-art .container-description .playlist-name {
+      font-size: 36px;
+  }
+
+  .infos-container-art {
+      width: 65%;
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .infos-container-art .container-description {
+      margin-top: 75px;
+  }
+
+  .infos-container-art .container-description .playlist-name {
+      font-size: 30px;
+  }
+
+  .infos-container-art .container-description .auxiliar-display .playlist-infos,
+  .infos-container-art .container-description .auxiliar-display .playlist-duration,
+  .infos-container-art .container-description .type,
+  .infos-container-art .container-description .playlist-bands {
+      font-size: 12px;
+  }
+
+
+}
+
+@media screen and (max-width: 930px) {
+  .infos-container-art .container-description .playlist-name {
+      font-size: 24px;
+  }
+
+  .infos-container-art {
+      width: 60%;
+  }
+
+}

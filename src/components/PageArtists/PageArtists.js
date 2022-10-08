@@ -4,6 +4,7 @@ import Api from "../../Api/Api";
 import Nav from "../Nav/Nav";
 import { useNavigate } from "react-router-dom"
 import SimpleBackdrop from '../../utils/Backdrop';
+
 function PageArtists() {
 
   const [backdrop, setBackdrop] = useState(false);

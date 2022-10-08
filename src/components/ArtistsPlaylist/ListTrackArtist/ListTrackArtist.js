@@ -93,8 +93,6 @@ function ListTrackArtist(props) {
             setMusic(response.data)
           })
       })
-
-      
   }, []);
 
   return (
